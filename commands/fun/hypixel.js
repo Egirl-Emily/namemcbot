@@ -106,9 +106,9 @@ module.exports = {
                )})**`
             )
             .setThumbnail('https://visage.surgeplay.com/face/' + player.uuid)
-            .setImage(`https://hypixel.paniek.de/signature/${player.uuid}/bedwars`)
+            .setImage(`https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1440,f_auto/50491001_kupidw.png`)  
             .setColor('#E0BBE4')
-            .setFooter('Image Bedwars Stats by Paniek')
+            .setFooter('Dm Egirl_Emily#4968 if you have any good websites to show stats for players and i will add it soon™')
             .addField('Rank:', getRank(player), true)
             .addField('Level:', networkLevel(player.networkExp), true)
             .addField('Karma:', player.karma ? numberWithCommas(player.karma) : 0, true)
