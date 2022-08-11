@@ -27,7 +27,7 @@ client.on("ready", async () => {
    // STATUS
 
    const guild = client.guilds.cache.first();
-   const activities = [`n?help`, `namemc.com`, `${guild.memberCount} members!`]; // These statuses can also be customised as you please.
+   const activities = [`What?!`, `Yeah! Wait..`, `no`, `Oh...`]; // These statuses can also be customised as you please.
 
    // Set a random activity first.
    let activity = activities[Math.floor(Math.random() * activities.length)];
@@ -36,7 +36,7 @@ client.on("ready", async () => {
    setInterval(() => {
       let activity = activities[Math.floor(Math.random() * activities.length)];
       client.user.setActivity(activity, { type: "WATCHING" });
-   }, 15000);
+   }, 10000);
 
    console.log(
       chalk.green.bold(
