@@ -35,7 +35,7 @@ module.exports = {
             new Discord.MessageEmbed()
                .setTitle(`${nickname}'s Skin`)
                .addField(`${nickname}'s UUID`, uuid)
-               .setImage(`https://visage.surgeplay.com/full/${uuid.toString()}`)
+               .setImage(`https://mc-heads.net/body/${uuid.toString()}.png`)
          ).catch(err => {
             message.channel.send("An error occurred when executing this command. Invalid username?");
             console.error(err);
